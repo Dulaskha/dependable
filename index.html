@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dependable Heating and Air | Trust the name. Depend on comfort.</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -27,7 +30,7 @@
                     <li><a href="#reviews">Reviews</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="#contact" class="message-btn">MESSAGE NOW</a>
+                <a href="tel:843.510.5255" class="call-btn">CALL NOW</a>
                 <div class="hamburger">
                     <span>☰</span>
                 </div>
@@ -75,7 +78,7 @@
             <div class="service-cards">
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="/api/placeholder/40/40" alt="Heating Icon" id="heating-icon">
+                        <img src="images/heating.jpg" alt="Heating Icon" id="heating-icon">
                     </div>
                     <h3>Heating</h3>
                     <p>Installation, repair and maintenance services for all heating systems. Keep your home or business
@@ -84,7 +87,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="/api/placeholder/40/40" alt="Cooling Icon" id="cooling-icon">
+                        <img src="images/cooling.jpg" alt="Cooling Icon" id="cooling-icon">
                     </div>
                     <h3>Cooling</h3>
                     <p>Complete air conditioning solutions for comfort all year round. Expert installation and repairs
@@ -93,7 +96,7 @@
                 </div>
                 <div class="service-card">
                     <div class="service-icon">
-                        <img src="/api/placeholder/40/40" alt="Maintenance Icon" id="maintenance-icon">
+                        <img src="images/maintenance-service.png" alt="Maintenance Icon" id="maintenance-icon">
                     </div>
                     <h3>Maintenance</h3>
                     <p>Regular service plans to keep your systems running efficiently. Preventive care to extend the
@@ -112,18 +115,18 @@
             </div>
             <div class="feature-cards">
                 <div class="feature-card">
-                    <div class="feature-icon emergency">24/7</div>
+                    <div class="feature-icon emergency"><img src="images/24-hours-color-icon.svg" ></div>
                     <h3>Emergency Service</h3>
                     <p>Available when you need us most, day or night. Our technicians are ready to respond to your
                         emergency calls.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon ratings">★★★★★</div>
+                    <div class="feature-icon ratings"><img src="images/five-star-rating-icon.svg" alt=""></div>
                     <h3>5-Star Rated</h3>
                     <p>Consistently high ratings from our satisfied customers. Quality service is our top priority.</p>
                 </div>
                 <div class="feature-card">
-                    <div class="feature-icon technicians">✓</div>
+                    <div class="feature-icon technicians"><img src="images/technician-icon.svg" alt=""></div>
                     <h3>Licensed Technicians</h3>
                     <p>Professionally trained and certified experts. We invest in continuous education for our team.</p>
                 </div>
@@ -132,39 +135,64 @@
     </section>
 
     <!-- Reviews Section -->
-    <section class="reviews" id="reviews">
-        <div class="container">
-            <div class="section-heading">
-                <h2>Customer Reviews</h2>
+<section class="reviews" id="reviews">
+    <div class="container">
+        <div class="section-heading">
+            <h2>Customer Reviews</h2>
+        </div>
+        <!-- Elfsight Google Reviews Widget -->
+        <script src="https://static.elfsight.com/platform/platform.js" async></script>
+        <div class="elfsight-app-20f4afa1-4ecc-47e0-963f-c8b52863c068" data-elfsight-app-lazy></div>
+    </div>
+</section>
+    <!-- Technicians in Action Section -->
+<section class="technicians-action" id="action">
+    <div class="container">
+        <div class="section-heading">
+            <h2>See Our HVAC Technicians in Action</h2>
+        </div>
+        <div class="action-grid">
+            <div class="action-item">
+                <img src="images/tech1.webp" alt="Technician servicing HVAC system">
             </div>
-            <div class="review-cards">
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <div class="review-text">
-                        "The technician was prompt and professional. Fixed our AC quickly and explained everything. Will
-                        definitely use again!"
-                    </div>
-                    <div class="reviewer">- Sarah M.</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <div class="review-text">
-                        "Dependable is the perfect name! Their team showed up when they said they would and did
-                        excellent work."
-                    </div>
-                    <div class="reviewer">- John T.</div>
-                </div>
-                <div class="review-card">
-                    <div class="stars">★★★★★</div>
-                    <div class="review-text">
-                        "Great value and service. Our new heating system works perfectly and was installed with minimal
-                        disruption."
-                    </div>
-                    <div class="reviewer">- Robert W.</div>
-                </div>
+            <div class="action-item">
+                <img src="images/tech2.webp" alt="Technician installing new unit">
+            </div>
+            <div class="action-item">
+                <img src="images/tech3.webp" alt="Technician performing maintenance">
+            </div>
+            <div class="action-item">
+                <img src="images/tech4.webp" alt="Technician inspecting equipment">
+            </div>
+            <div class="action-item">
+                <img src="images/tech5.webp" alt="Technician explaining system to customer">
+            </div>
+            <div class="action-item">
+                <img src="images/tech6.webp" alt="Technician team working together">
             </div>
         </div>
-    </section>
+        <!-- Slider will be shown on mobile -->
+        <div class="action-slider">
+            <div class="slider-container">
+                <img src="images/tech1.webp" alt="Technician servicing HVAC system" class="slide active">
+                <img src="images/tech2.webp" alt="Technician installing new unit" class="slide">
+                <img src="images/tech3.webp" alt="Technician performing maintenance" class="slide">
+                <img src="images/tech4.webp" alt="Technician inspecting equipment" class="slide">
+                <img src="images/tech5.webp" alt="Technician explaining system to customer" class="slide">
+                <img src="images/tech6.webp" alt="Technician team working together" class="slide">
+            </div>
+            <div class="slider-indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
+                <span class="indicator" data-index="3"></span>
+                <span class="indicator" data-index="4"></span>
+                <span class="indicator" data-index="5"></span>
+            </div>
+        </div>
+    </div>
+</section>
+
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
@@ -213,40 +241,44 @@
     </section>
 
     <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-container">
-                <div class="footer-logo">
-                    <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Dependable Logo" id="footer-logo-image">
-                    <h2>DEPENDABLE</h2>
-                    <span>HEATING AND AIR</span>
-                    <p>Trust the name. Depend on comfort.</p>
-                </div>
-                <div class="footer-links">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#reviews">Reviews</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-links">
-                    <h3>Service Areas</h3>
-                    <ul>
-                        <li><a href="#services">Residential</a></li>
-                        <li><a href="#services">Commercial</a></li>
-                        <li><a href="#services">Emergency Services</a></li>
-                    </ul>
-                </div>
+    
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="images/FullLogo_Transparent_NoBuffer.png" alt="Dependable Logo" id="footer-logo-image">
+                <h2>DEPENDABLE</h2>
+                <span>HEATING AND AIR</span>
+                <p>Trust the name. Depend on comfort.</p>
             </div>
-            <div class="copyright">
-                <p>© 2025 Dependable Heating and Air. All Rights Reserved.</p>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="tel:8435105255">843.510.5255</a></li>
+                    <li><a href="mailto:info@dependableair.com">info@dependableair.com</a></li>
+                    <li>Monday-Friday: 8AM-6PM</li>
+                    <li>24/7 Emergency Service</li>
+                </ul>
             </div>
         </div>
-    </footer>
+        <div class="copyright">
+            <p>© 2025 Dependable Heating and Air. All Rights Reserved.</p>
+        </div>
+    </div>
+</footer>
 
-    <script src="script2.js"></script>
+
+    <script src="script3.js"></script>
 </body>
 </html>
